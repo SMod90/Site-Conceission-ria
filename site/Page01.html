@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Estilos.css">
+  <style>
+    #myHeader {
+      background-color: gray;
+      color: black;
+      padding: 0px;
+      text-align: left;
+    }
+  </style>
+
+  <style>
+    #myHeader {
+      background-color: gray;
+      color: black;
+      padding: 40px;
+      text-align: left;
+    }
+  </style>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Style the header */
+    header {
+      background-color: gray;
+      padding: 30px;
+      text-align: left;
+      font-size: 10px;
+      color: white;
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 40%;
+      height: 950px;
+      /* only for demonstration, should be removed */
+      background: white;
+      padding: 45px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    article {
+      float: left;
+      padding: 45px;
+      width: 60%;
+      background-color: #f1f1f1;
+      height: 950px;
+      /* only for demonstration, should be removed */
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+
+      nav,
+      article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2 class="car-title">Chevrolet</h2>
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <li><a href="Carro07.html">
+            <img src="images/Carro30.jpg" alt="Renault Kwid" width:200px;height:200px;>
+            <h2>Renault Kwid </h2>
+        </li>
+        <li><a href="carro08.html">
+            <img src="images/carro60.jpg" alt="Chevrolet Cruse" width:200px;height:200px;>
+            <h2>Chevrolet Cruse </h2>
+        </li>
+        <li>
+        <li><a href="Carro01.html">
+            <img src="images/onixcapa2.jpg" alt="Chevrolet Onix" width:200px;height:200px;>
+            <h2>Chevrolet Onix </h2>
+        </li>
+      </ul>
+    </nav>
+
+    <article>
+
+    </article>
+  </section>
+</body>
+
+</html>
